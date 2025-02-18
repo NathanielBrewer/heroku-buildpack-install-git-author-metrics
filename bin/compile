@@ -1,0 +1,11 @@
+#!/bin/bash
+# bin/compile
+
+# In Heroku’s buildpack lifecycle, the compile script receives the build directory as its first argument
+BUILD_DIR="$1"
+mkdir -p "$BUILD_DIR/bin"
+
+curl -L -o "$BUILD_DIR/bin/git-author-metrics.sh" "https://raw.githubusercontent.com/NathanielBrewer/git-author-metrics/main/git-author-metrics.sh"
+
+# Make the downloaded script executable.
+chmod +x "$BUILD_DIR/bin/git-author-metrics.sh"

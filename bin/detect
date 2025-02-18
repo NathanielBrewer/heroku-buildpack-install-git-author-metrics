@@ -1,0 +1,4 @@
+#!/bin/bash
+# This buildpack always applies, so we simply output a marker string.
+echo "heroku-buildpack-install-git-author-metrics"
+exit 0
