@@ -5,7 +5,7 @@
 BUILD_DIR="$1"
 mkdir -p "$BUILD_DIR/bin"
 
-curl -L -o "$BUILD_DIR/bin/git-author-metrics.sh" "https://raw.githubusercontent.com/NathanielBrewer/git-author-metrics/main/git-author-metrics.sh"
+curl -L -o "$BUILD_DIR/bin/git_author_metrics.sh" "https://raw.githubusercontent.com/NathanielBrewer/git-author-metrics/refs/heads/main/git_author_metrics.sh"
 
 # Make the downloaded script executable.
-chmod +x "$BUILD_DIR/bin/git-author-metrics.sh"
+chmod +x "$BUILD_DIR/bin/git_author_metrics.sh"
